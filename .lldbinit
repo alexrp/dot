@@ -1,0 +1,4 @@
+settings set notify-void true
+settings set target.default-arch x86_64
+settings set target.x86-disassembly-flavor intel
+settings set target.hex-immediate-style asm

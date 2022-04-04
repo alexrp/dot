@@ -1,0 +1,37 @@
+[blame]
+    coloring = highlightRecent
+    date = relative
+[branch]
+    autosetuprebase = always
+[commit]
+    gpgsign = true
+[core]
+    editor = nano
+    autocrlf = true
+    symlinks = true
+[diff]
+    algorithm = histogram
+    renames = copies
+[grep]
+    column = true
+    linenumber = true
+[pull]
+    rebase = merges
+[push]
+    default = nothing
+    gpgsign = if-asked
+[rebase]
+    missingcommitscheck = warn
+[stash]
+    showincludeuntracked = true
+    showpatch = true
+    showstat = true
+[status]
+    showstash = true
+    showuntrackedfiles = all
+[tag]
+    gpgsign = true
+[user]
+    email = alex@alexrp.com
+    name = Alex Rønne Petersen
+    signingkey = A80A468044A48AFFDB8D05DBEB1F0A1F15E344D9

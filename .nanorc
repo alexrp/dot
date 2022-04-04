@@ -1,0 +1,28 @@
+set afterends
+set autoindent
+set casesensitive
+set constantshow
+set emptyline
+set guidestripe 80
+set historylog
+set indicator
+set linenumbers
+set locking
+set mouse
+set multibuffer
+set nohelp
+set positionlog
+set smarthome
+set suspendable
+set tabsize 4
+set tabstospaces
+
+set errorcolor brightred
+set functioncolor white
+set keycolor brightred
+set numbercolor brightred
+set scrollercolor brightblue
+set selectedcolor brightwhite,blue
+set statuscolor brightyellow
+set stripecolor black,white
+set titlecolor brightyellow
