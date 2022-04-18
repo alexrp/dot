@@ -11,7 +11,6 @@ set locking
 set mouse
 set multibuffer
 set nohelp
-set positionlog
 set smarthome
 set suspendable
 set tabsize 4

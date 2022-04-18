@@ -8,6 +8,7 @@
 [core]
     editor = nano
     autocrlf = true
+    pager = less -FKRSX
     symlinks = true
 [diff]
     algorithm = histogram
