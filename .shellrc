@@ -1,0 +1,6 @@
+test -r ~/.dircolors && eval $(dircolors -b ~/.dircolors)
+
+export FZF_DEFAULT_COMMAND="rg --files --hidden"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+export MICRO_TRUECOLOR=1
