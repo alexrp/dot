@@ -1,0 +1,57 @@
+format = """
+$directory\
+$git_commit\
+$git_branch\
+$git_state\
+$line_break\
+$jobs\
+$cmd_duration\
+$status\
+$character
+"""
+scan_timeout = 50
+
+[character]
+error_symbol = '[\$](#ff0000)'
+success_symbol = '[\$](#00ff00)'
+
+[cmd_duration]
+min_time = 1_000
+format = '[$duration]($style) '
+show_milliseconds = true
+style = '#ff9900'
+
+[directory]
+format = '[$path]($style)'
+truncate_to_repo = false
+truncation_length = 0
+style = '#00cccc'
+
+[git_commit]
+format = '  [$hash]($style)'
+only_detached = true
+style = '#8899aa'
+
+[git_branch]
+format = '  [$branch]($style)'
+only_attached = true
+style = '#8899aa'
+
+[git_state]
+bisect = 'BISECT'
+cherry_pick = 'CHERRY-PICK'
+format = '  [$state ($progress_current/$progress_total)]($style)'
+merge = 'MERGE'
+rebase = 'REBASE'
+revert = 'REVERT'
+style = '#ffff00'
+
+[jobs]
+format = '[$number]($style) '
+style = '#bb00ff'
+threshold = 1
+
+[status]
+disabled = false
+format = '[$common_meaning$signal_name$maybe_int]($style) '
+style = '#ffffff'
