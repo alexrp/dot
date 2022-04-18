@@ -1,0 +1,26 @@
+{
+    "autosu": true,
+    "clipboard": "terminal",
+    "colorcolumn": 120,
+    "colorscheme": "dukedark-tc",
+    "comment": false,
+    "diffgutter": true,
+    "ft:git-commit": {
+        "savecursor": false
+    },
+    "ft:markdown": {
+        "colorcolumn": 80
+    },
+    "ftoptions": false,
+    "linter": false,
+    "literate": false,
+    "parsecursor": true,
+    "rmtrailingws": true,
+    "savecursor": true,
+    "saveundo": true,
+    "scrollbar": true,
+    "scrollspeed": 3,
+    "statusformatl": "  $(filename)  Ln $(line)/$(status.lines)  Col $(col) $(modified)",
+    "statusformatr": "$(opt:filetype)  $(opt:fileformat)  $(opt:encoding)  ",
+    "tabstospaces": true
+}
