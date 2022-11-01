@@ -12,7 +12,6 @@ set mouse
 set multibuffer
 set nohelp
 set smarthome
-set suspendable
 set tabsize 4
 set tabstospaces
 
