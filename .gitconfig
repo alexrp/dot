@@ -2,37 +2,43 @@
     coloring = highlightRecent
     date = relative
 [branch]
-    autosetuprebase = always
+    autoSetupRebase = always
 [commit]
-    gpgsign = true
+    gpgSign = true
 [core]
     editor = nano
-    autocrlf = true
+    autoCrlf = true
     pager = less -FKRSX
+    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
     symlinks = true
 [diff]
     algorithm = histogram
     renames = copies
+[gpg]
+    format = ssh
+[gpg.ssh]
+    allowedSignersFile = ~/.ssh/allowed_signers
+    defaultKeyCommand = C:/Windows/System32/OpenSSH/ssh-add.exe -L
 [grep]
     column = true
-    linenumber = true
+    lineNumber = true
 [pull]
     rebase = merges
 [push]
     default = nothing
-    gpgsign = if-asked
+    gpgSign = if-asked
 [rebase]
-    missingcommitscheck = warn
+    missingCommitsCheck = warn
 [stash]
-    showincludeuntracked = true
-    showpatch = true
-    showstat = true
+    showIncludeUntracked = true
+    showPatch = true
+    showStat = true
 [status]
-    showstash = true
-    showuntrackedfiles = all
+    showStash = true
+    showUntrackedFiles = all
 [tag]
-    gpgsign = true
+    gpgSign = true
 [user]
     email = alex@alexrp.com
     name = Alex Rønne Petersen
-    signingkey = A80A468044A48AFFDB8D05DBEB1F0A1F15E344D9
+    signingkey = ~/.ssh/id_ed25519
