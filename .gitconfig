@@ -7,8 +7,9 @@
     gpgSign = true
 [core]
     editor = nano
-    autoCrlf = true
+    autocrlf = true
     pager = less -FKRSX
+    safecrlf = false
     sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
     symlinks = true
 [diff]
@@ -36,6 +37,8 @@
 [status]
     showStash = true
     showUntrackedFiles = all
+[submodule]
+    recurse = true
 [tag]
     gpgSign = true
 [user]
