@@ -23,6 +23,8 @@
 [grep]
     column = true
     lineNumber = true
+[init]
+    defaultBranch = master
 [pull]
     rebase = merges
 [push]
