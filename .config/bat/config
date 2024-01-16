@@ -1,0 +1,4 @@
+--diff-context 3
+--pager 'less -FKRSX'
+--theme 'Visual Studio Dark+'
+--style changes,header,numbers
