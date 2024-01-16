@@ -1,3 +1,5 @@
+test -r ~/.shellrc && source ~/.shellrc
+
 HISTCONTROL=ignoredups
 HISTFILESIZE=10000000
 HISTSIZE=10000000
@@ -8,8 +10,6 @@ shopt -s globstar
 shopt -s histappend
 shopt -s histverify
 shopt -s nocaseglob
-
-test -r ~/.shellrc && source ~/.shellrc
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash --cmd c)"

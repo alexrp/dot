@@ -1,5 +1,7 @@
 autoload -U -z compinit bashcompinit && compinit && bashcompinit
 
+test -r ~/.shellrc && source ~/.shellrc
+
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 SAVEHIST=10000000
 HISTSIZE=10000000
@@ -21,8 +23,6 @@ setopt longlistjobs
 setopt nocaseglob
 setopt numericglobsort
 setopt rmstarsilent
-
-test -r ~/.shellrc && source ~/.shellrc
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd c)"
