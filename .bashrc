@@ -1,9 +1,13 @@
-HISTCONTROL=ignoreboth
-HISTSIZE=50000
-HISTFILESIZE=10000
+HISTCONTROL=ignoredups
+HISTFILESIZE=10000000
+HISTSIZE=10000000
 
+shopt -s extglob
+shopt -s failglob
 shopt -s globstar
 shopt -s histappend
+shopt -s histverify
+shopt -s nocaseglob
 
 test -r ~/.shellrc && source ~/.shellrc
 
