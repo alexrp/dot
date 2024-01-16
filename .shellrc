@@ -3,14 +3,18 @@ test -r ~/.dircolors && eval $(dircolors -b ~/.dircolors)
 export PAGER="less"
 export LESS="-FKRSX"
 
-export MANPAGER="sh -c 'col -bx | bat -p -l man'"
+export MANPAGER="sh -c 'col -b -x | bat -p -l man'"
 export MANROFFOPT="-c"
 
 export MICRO_TRUECOLOR="1"
 
-alias rg="rg --binary --engine auto -L --heading -."
+alias dust="dust -s -H"
 alias eza="eza -F --color=auto --color-scale=all --icons=auto --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
+alias fd="fd -L"
+alias hyperfine="hyperfine --shell $SHELL --output pipe"
+alias rg="rg --binary --engine auto -L --heading -."
 
+alias bench="hyperfine"
 alias cat="bat"
 alias du="dust"
 alias find="fd"
