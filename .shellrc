@@ -8,7 +8,7 @@ export FZF_DEFAULT_OPTS="--bind home:preview-up --bind end:preview-down --height
 export MANPAGER="sh -c 'col -b -x | bat -p -l man'"
 export MANROFFOPT="-c"
 
-export EDITOR="nano"
+export EDITOR="micro"
 
 export MICRO_TRUECOLOR="1"
 

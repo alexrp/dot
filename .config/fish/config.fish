@@ -6,7 +6,7 @@ set -g -x FZF_DEFAULT_OPTS "--bind home:preview-up --bind end:preview-down --hei
 set -g -x MANPAGER "sh -c 'col -b -x | bat -p -l man'"
 set -g -x MANROFFOPT "-c"
 
-set -g -x EDITOR "nano"
+set -g -x EDITOR "micro"
 
 set -g -x MICRO_TRUECOLOR "1"
 
