@@ -24,3 +24,5 @@ set selectedcolor brightwhite,blue
 set statuscolor brightyellow
 set stripecolor black,white
 set titlecolor brightyellow
+
+bind ^H chopwordleft all
