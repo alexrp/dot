@@ -6,7 +6,6 @@
 [commit]
     gpgSign = true
 [core]
-    editor = nano
     autocrlf = true
     pager = delta
     safecrlf = false
