@@ -12,4 +12,4 @@ shopt -s histverify
 shopt -s nocaseglob
 
 eval "$(starship init bash)"
-eval "$(zoxide init bash --cmd c)"
+eval "$(zoxide init bash --cmd d)"

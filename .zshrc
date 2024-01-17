@@ -25,4 +25,4 @@ setopt numericglobsort
 setopt rmstarsilent
 
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh --cmd c)"
+eval "$(zoxide init zsh --cmd d)"

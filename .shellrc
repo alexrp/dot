@@ -3,13 +3,17 @@ test -r ~/.dircolors && eval $(dircolors -b ~/.dircolors)
 export PAGER="less"
 export LESS="-FKRSX"
 
+export FZF_DEFAULT_OPTS="--bind home:preview-up --bind end:preview-down --height 90% --layout reverse --border --marker='*'"
+
 export MANPAGER="sh -c 'col -b -x | bat -p -l man'"
 export MANROFFOPT="-c"
+
+export EDITOR="nano"
 
 export MICRO_TRUECOLOR="1"
 
 alias dust="dust -s -H"
-alias eza="eza -F --color=auto --color-scale=all --icons=auto --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
+alias eza="eza -F --color auto --color-scale all --icons auto --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
 alias fd="fd -L"
 alias hyperfine="hyperfine --shell $SHELL --output pipe"
 alias rg="rg --binary --engine auto -L --heading -."
