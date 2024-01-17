@@ -12,7 +12,7 @@ set -g -x MICRO_TRUECOLOR "1"
 
 set -g fish_greeting
 
-set -g tide_left_prompt_items "context" "pwd" "git" "newline" "cmd_duration" "character"
+set -g tide_left_prompt_items "context" "pwd" "git" "cmd_duration" "newline" "character"
 set -g tide_right_prompt_items
 set -g tide_cmd_duration_threshold "1000"
 set -g tide_context_always_display "true"
