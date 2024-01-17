@@ -14,8 +14,15 @@ set -g fish_greeting
 
 set -g tide_left_prompt_items "context" "pwd" "git" "cmd_duration" "newline" "character"
 set -g tide_right_prompt_items
+
+set -g tide_character_icon "❯"
+set -g tide_cmd_duration_icon
 set -g tide_cmd_duration_threshold "1000"
 set -g tide_context_always_display "true"
+set -g tide_git_icon
+set -g tide_pwd_icon
+set -g tide_pwd_icon_home
+set -g tide_pwd_icon_unwritable "✘"
 
 set -g fzf_directory_opts "--bind" "ctrl-o:execute($EDITOR {} &> /dev/tty)"
 set -g fzf_diff_highlighter "delta"
@@ -25,7 +32,7 @@ bind \b backward-kill-word
 bind \e\[3\;5~ kill-word
 
 alias dust "dust -s -H"
-alias eza "eza -F --color auto --color-scale all --icons auto --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
+alias eza "eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
 alias fd "fd -L"
 alias hyperfine "hyperfine --shell $SHELL --output pipe"
 alias rg "rg --binary --engine auto -L --heading -."

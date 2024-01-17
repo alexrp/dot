@@ -13,7 +13,7 @@ export EDITOR="micro"
 export MICRO_TRUECOLOR="1"
 
 alias dust="dust -s -H"
-alias eza="eza -F --color auto --color-scale all --icons auto --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
+alias eza="eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
 alias fd="fd -L"
 alias hyperfine="hyperfine --shell $SHELL --output pipe"
 alias rg="rg --binary --engine auto -L --heading -."
