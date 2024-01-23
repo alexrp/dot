@@ -6,6 +6,7 @@
     "comment": false,
     "diffgutter": true,
     "ft:git-commit": {
+        "colorcolumn": 80,
         "savecursor": false
     },
     "ft:markdown": {
