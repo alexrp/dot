@@ -1,23 +1,25 @@
 {
     "autosu": true,
-    "clipboard": "terminal",
+    "clipboard": "internal",
     "colorcolumn": 120,
     "colorscheme": "dukedark-tc",
     "comment": false,
     "diffgutter": true,
     "ft:git-commit": {
-        "colorcolumn": 80,
-        "savecursor": false
+        "colorcolumn": 80
     },
     "ft:markdown": {
         "colorcolumn": 80
+    },
+    "ft:patch": {
+        "rmtrailingws": false,
+        "tabstospaces": false
     },
     "ftoptions": false,
     "linter": false,
     "literate": false,
     "parsecursor": true,
     "rmtrailingws": true,
-    "savecursor": true,
     "saveundo": true,
     "scrollbar": true,
     "scrollspeed": 3,
