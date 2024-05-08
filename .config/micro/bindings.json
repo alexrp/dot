@@ -1,0 +1,4 @@
+{
+    "Ctrl-Delete": "DeleteWordRight",
+    "OldBackspace": "DeleteWordLeft"
+}
