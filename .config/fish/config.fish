@@ -31,19 +31,16 @@ set -g fzf_preview_dir_cmd "eza --color always"
 bind \b backward-kill-word
 bind \e\[3\;5~ kill-word
 
-alias dust "dust -s -H"
+alias dust "dust -s -o si"
 alias eza "eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
 alias fd "fd -L"
 alias hyperfine "hyperfine --shell $SHELL --output pipe"
 alias rg "rg --binary --engine auto -L --heading -."
 
-abbr bench hyperfine
+abbr bench "hyperfine"
 abbr cat "bat"
-abbr du "dust"
-abbr find "fd"
-abbr grep "rg"
 abbr ls "eza"
 abbr ll "eza -l"
-abbr ps "procs"
+abbr nano "micro"
 
-zoxide init fish --cmd d | source
+zoxide init fish --cmd cd | source
