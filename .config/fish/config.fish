@@ -31,6 +31,7 @@ set -g fzf_preview_dir_cmd "eza --color always"
 bind \b backward-kill-word
 bind \e\[3\;5~ kill-word
 
+alias cgdb "cgdb -d gdb-multiarch"
 alias dust "dust -s -o si"
 alias eza "eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
 alias fd "fd -L"
@@ -39,8 +40,8 @@ alias rg "rg --binary --engine auto -L --heading -."
 
 abbr bench "hyperfine"
 abbr cat "bat"
+abbr gdb "gdb-multiarch"
 abbr ls "eza"
-abbr ll "eza -l"
 abbr nano "micro"
 
 zoxide init fish --cmd cd | source
