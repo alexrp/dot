@@ -62,8 +62,6 @@
 [status]
     showStash = true
     showUntrackedFiles = all
-[submodule]
-    recurse = true
 [tag]
     gpgSign = true
 [user]
