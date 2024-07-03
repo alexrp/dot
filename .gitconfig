@@ -11,6 +11,8 @@
     safecrlf = false
     sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
     symlinks = true
+[credential]
+    helper = store
 [delta]
     dark = true
     features = zebra-dark
@@ -48,6 +50,11 @@
     gpgSign = if-asked
 [rebase]
     missingCommitsCheck = warn
+[sendemail]
+    smtpEncryption = tls
+    smtpServer = smtp.gmail.com
+    smtpServerPort = 587
+    smtpUser = alex@alexrp.com
 [stash]
     showIncludeUntracked = true
     showPatch = true
