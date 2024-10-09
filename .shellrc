@@ -15,7 +15,7 @@ export MICRO_TRUECOLOR="1"
 alias cgdb="cgdb -d gdb-multiarch"
 alias dust="dust -s -o si"
 alias eza="eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
-alias fd="fd -L"
+alias fd="fd -H -I -L"
 alias hyperfine="hyperfine --shell $SHELL --output pipe"
 alias rg="rg --binary --engine auto -L --heading -."
 
