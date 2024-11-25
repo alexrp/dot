@@ -12,15 +12,16 @@ export EDITOR="micro"
 
 export MICRO_TRUECOLOR="1"
 
-alias cgdb="cgdb -d gdb-multiarch"
-alias dust="dust -s -o si"
-alias eza="eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
-alias fd="fd -H -I -L"
-alias hyperfine="hyperfine --shell $SHELL --output pipe"
-alias rg="rg --binary --engine auto -L --heading -."
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/config"
 
-alias bench="hyperfine"
-alias cat="bat"
+alias cgdb="cgdb -d gdb-multiarch"
+# TODO: https://github.com/eza-community/eza/issues/897
+alias eza="eza --all --classify --color auto --color-scale all --git --group-directories-first --hyperlink --mounts --octal-permissions --smart-group --time-style '+%d %b %H:%M:%S'"
+alias fd="fd --follow --hidden --no-ignore"
+alias hexyl="hexyl --color auto --no-squeezing --panels auto"
+alias hyperfine="hyperfine --output pipe --shell \$SHELL"
+
+alias clip="xclip -rmlastnl -selection clipboard"
 alias gdb="gdb-multiarch"
-alias ls="eza"
+alias l="eza"
 alias nano="micro"
