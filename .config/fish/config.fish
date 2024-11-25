@@ -10,6 +10,8 @@ set -g -x EDITOR "micro"
 
 set -g -x MICRO_TRUECOLOR "1"
 
+set -g -x RIPGREP_CONFIG_PATH "$HOME/.config/ripgrep/config"
+
 set -g fish_greeting
 
 set -g tide_left_prompt_items "context" "pwd" "git" "cmd_duration" "newline" "character"
@@ -32,16 +34,15 @@ bind \b backward-kill-word
 bind \e\[3\;5~ kill-word
 
 alias cgdb "cgdb -d gdb-multiarch"
-alias dust "dust -s -o si"
-alias eza "eza -F --color auto --color-scale all --hyperlink -a --group-directories-first --smart-group -M --time-style '+%d %b %H:%M:%S' -o --git"
-alias fd "fd -H -I -L"
-alias hyperfine "hyperfine --shell $SHELL --output pipe"
-alias rg "rg --binary --engine auto -L --heading -."
+# TODO: https://github.com/eza-community/eza/issues/897
+alias eza "eza --all --classify --color auto --color-scale all --git --group-directories-first --hyperlink --mounts --octal-permissions --smart-group --time-style '+%d %b %H:%M:%S'"
+alias fd "fd --follow --hidden --no-ignore"
+alias hexyl "hexyl --color auto --no-squeezing --panels auto"
+alias hyperfine "hyperfine --output pipe --shell \$SHELL"
 
-abbr bench "hyperfine"
-abbr cat "bat"
+abbr clip "xclip -rmlastnl -selection clipboard"
 abbr gdb "gdb-multiarch"
-abbr ls "eza"
+abbr l "eza"
 abbr nano "micro"
 
 zoxide init fish --cmd cd | source
